@@ -29,15 +29,22 @@
   
 
 <header>
-   <nav>
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-     <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-    <a href="#resume">Resume</a>
-</nav>
+  <nav>
+    <div class="logo">Irham Fathima</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume">Resume</a>
+    </div>
+  </nav>
 </header>
+
 
 
 <section id="home" class="hero">
@@ -288,5 +295,11 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
